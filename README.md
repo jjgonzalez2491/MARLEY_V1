@@ -126,18 +126,6 @@ The `alternative_envs/` folder contains modified versions of the environment tha
 
 ---
 
-## Application
-
-This framework was applied to analyze the **Italian electricity system** under various scenarios:
-
-- **Different levels of market competition**: 4, 8, 16, and 32 agents
-- **Alternative market designs**: Energy-only markets, Capacity markets, CfD mechanisms
-- **Multiple policy scenarios**: Including carbon pricing
-
-Results demonstrate the **critical role of market design** in achieving decarbonization targets while maintaining price stability and system reliability.
-
----
-
 ## Citation
 
 If you use this framework in your research, please cite:
@@ -161,8 +149,4 @@ For questions, issues, or contributions, please contact: javier.gonzalez@cmcc.it
 
 ## Acknowledgments
 
-Authors acknowledge support from the European Union ERC Consolidator Grant under project No. 101044703 (EUNICE), European Union PNRR - Missione 4–Componente 2–Avviso 341 del 15/03/2022 - Next Generation EU, in the framework of the project GRINS - Growing Resilient, INclusive and Sustainable project (GRINS PE00000018 – CUP C83C22000890001), and the European Union’s Horizon Europe programme under the Marie Skłodowska-Curie grant agreement number 101148367. 
-
----
-
-> **Note**: This is research software under active development. While we strive for robustness, users should validate results for their specific applications and report any issues through GitHub.
+Authors acknowledge support from the European Union ERC Consolidator Grant under project No. 101044703 (EUNICE), European Union PNRR - Missione 4–Componente 2–Avviso 341 del 15/03/2022 - Next Generation EU, in the framework of the project GRINS - Growing Resilient, INclusive and Sustainable project (GRINS PE00000018 – CUP C83C22000890001), and the European Union’s Horizon Europe programme under the Marie Skłodowska-Curie grant agreement number 101148367. Finally, the framework is based on the Ray and RLLIB libraries, available in https://github.com/ray-project. 
