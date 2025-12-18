@@ -6,6 +6,8 @@ This repository contains the implementation of a **multi-agent reinforcement lea
 
 The framework employs **Independent Proximal Policy Optimization (IPPO)** to simulate decentralized, competitive market environments where multiple agents invest in generation assets through wholesale markets, capacity remuneration mechanisms, and Contract for Differences (CfD) auctions.
 
+![Graphical Abstract](images/181225_Graphical_Abstract.jpg)
+
 ---
 
 ## Key Features
