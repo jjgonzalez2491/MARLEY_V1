@@ -4,7 +4,7 @@
 
 This repository contains the implementation of a **multi-agent reinforcement learning (MARL) framework** for modeling long-term electricity markets, used in the article "Assessing Long Term Electricity Market Design for Ambitious Decarbonization Targets using Multi-Agent Reinforcement Learning". The model enables the assessment of various market designs, policy instruments, and decarbonization strategies in electricity systems, with a focus on capturing the adaptive behavior of profit-maximizing generation companies making investment decisions.
 
-The framework employs **Independent Proximal Policy Optimization (IPPO)** to simulate decentralized, competitive market environments where multiple agents invest in generation assets through wholesale markets, capacity remuneration mechanisms, and Contract for Differences (CfD) auctions. The framework is based on the Ray and RLLIB MARL implementations.
+The framework employs **Independent Proximal Policy Optimization (IPPO)** to simulate decentralized, competitive market environments where multiple agents invest in generation assets through wholesale markets, capacity remuneration mechanisms, and Contract for Differences (CfD) auctions. The framework is based on the Ray and RLLIB MARL implementations, available in https://github.com/ray-project. 
 
 ![Graphical Abstract](images/181225_Graphical_Abstract.jpg)
 
