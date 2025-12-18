@@ -155,15 +155,13 @@ If you use this framework in your research, please cite:
 
 ## Contact
 
-For questions, issues, or contributions, please:
-- Open an issue on GitHub
-- Contact: [your contact information]
+For questions, issues, or contributions, please contact: javier.gonzalez@cmcc.it and/or carlos.rodriguez@cmcc.it. 
 
 ---
 
 ## Acknowledgments
 
-This work is part of the **STEP-CHANGE program** at **Politecnico di Milano**, supervised by Professor Massimo Tavoni.
+Authors acknowledge support from the European Union ERC Consolidator Grant under project No. 101044703 (EUNICE), European Union PNRR - Missione 4–Componente 2–Avviso 341 del 15/03/2022 - Next Generation EU, in the framework of the project GRINS - Growing Resilient, INclusive and Sustainable project (GRINS PE00000018 – CUP C83C22000890001), and the European Union’s Horizon Europe programme under the Marie Skłodowska-Curie grant agreement number 101148367. 
 
 ---
 
