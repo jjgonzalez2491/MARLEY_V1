@@ -2,21 +2,11 @@
 
 ## Overview
 
-This repository contains the implementation of a **multi-agent reinforcement learning (MARL) framework** for modeling long-term electricity markets. The model enables the assessment of various market designs, policy instruments, and decarbonization strategies in electricity systems, with a focus on capturing the adaptive behavior of profit-maximizing generation companies making investment decisions.
+This repository contains the implementation of a **multi-agent reinforcement learning (MARL) framework** for modeling long-term electricity markets, used in the article "Assessing Long Term Electricity Market Design for Ambitious Decarbonization Targets using Multi-Agent Reinforcement Learning". The model enables the assessment of various market designs, policy instruments, and decarbonization strategies in electricity systems, with a focus on capturing the adaptive behavior of profit-maximizing generation companies making investment decisions.
 
-The framework employs **Independent Proximal Policy Optimization (IPPO)** to simulate decentralized, competitive market environments where multiple agents invest in generation assets through wholesale markets, capacity remuneration mechanisms, and Contract for Differences (CfD) auctions.
+The framework employs **Independent Proximal Policy Optimization (IPPO)** to simulate decentralized, competitive market environments where multiple agents invest in generation assets through wholesale markets, capacity remuneration mechanisms, and Contract for Differences (CfD) auctions. The framework is based on the Ray and RLLIB MARL implementations.
 
 ![Graphical Abstract](images/181225_Graphical_Abstract.jpg)
-
----
-
-## Key Features
-
-- **Explicit auction mechanisms**: Models long-term market designs including capacity markets and CfD auctions
-- **Multiple policy instruments**: Supports simultaneous evaluation of various policy layers (e.g., carbon taxes, support schemes)
-- **Portfolio management**: Agents manage both new investments and existing assets, capturing incumbent vs. entrant dynamics
-- **Market competition analysis**: Captures the impact of market concentration on decarbonization outcomes
-- **Flexible market design**: Enables testing of radically different institutional arrangements and hybrid market models
 
 ---
 
@@ -37,11 +27,11 @@ The framework employs **Independent Proximal Policy Optimization (IPPO)** to sim
 
 ## Installation
 
-### Requirements
+### Main Requirements
 
 - Python 3.8+
 - Conda or Miniconda
-- Linux-based system (recommended for HPC environments)
+- Recommended Linux-based system
 
 ### Setup
 
@@ -86,43 +76,6 @@ Base Excel files containing market parameters, technology characteristics, and d
 ### Visualization
 
 Plotting utilities are provided in the `utils/` folder for generating market outcome visualizations and performance metrics.
-
----
-
-## Model Description
-
-The framework models **generation companies (GENCOs)** as independent reinforcement learning agents making investment decisions across multiple time periods. Key modeling features include:
-
-- **Investment mechanisms**: Capacity markets, Contract for Differences auctions, and merchant investments in the wholesale market
-- **Decentralized learning**: Independent PPO agents responding to market signals without coordination
-- **Competitive dynamics**: Captures strategic interactions between agents with varying market shares
-- **Policy integration**: Incorporates carbon pricing and other regulatory instruments
-- **System constraints**: Represents demand requirements, technology availability, and resource adequacy
-
-The model has been validated through extensive hyperparameter searches to ensure that decentralized training yields outcomes consistent with competitive market behavior.
-
----
-
-## Alternative Implementations
-
-The `alternative_envs/` folder contains modified versions of the environment that implement the **penalty mechanism** discussed in the paper. These variants can be used to explore different behavioral assumptions and market clearing approaches.
-
----
-
-## ⚠️ Important Notes
-
-### HPC System Requirements
-
-**Many files in this repository are designed for High-Performance Computing systems running Linux**, particularly those using LSF (Load Sharing Facility) job scheduling. 
-
-### Local Execution
-
-**For simulations on personal computers with limited resources or different operating systems (Windows, macOS), major modifications will be necessary.** These may include:
-
-- Adjusting parallelization settings
-- Modifying job submission scripts
-- Reducing environment complexity or agent count
-- Changing file paths and system-specific dependencies
 
 ---
 
