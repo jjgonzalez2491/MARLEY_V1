@@ -1,4 +1,4 @@
-name: ray_3
+name: ray_environment
 channels:
   - pytorch
   - nvidia
