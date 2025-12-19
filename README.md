@@ -12,10 +12,12 @@ The framework employs **Independent Proximal Policy Optimization (IPPO)** to sim
 
 ## Repository Structure
 ```
-├── environment/              # Main RLlib environment implementation
-├── training/                 # Training scripts and configuration
-├── evaluation/              # Scripts for evaluating trained agents
-├── data/                    # Base Excel files for training scenarios
+└── CM_CfD.py                # Main RLlib environment implementation
+└── training_CM_CfD.py       # Training scripts and configuration
+└── data_CM_CfD.py           # Scripts for evaluating trained agents
+└── ray_environment.yml      # Conda environment specification
+└── README.md               # This file
+├── alternative_envs/        # Alternative environment implementations (with penalty)
 ├── checkpoints/             # Exemplary trained checkpoint (CRM+CfD, 16 agents)
 ├── utils/                   # Utility scripts for plotting and analysis
 ├── alternative_envs/        # Alternative environment implementations (with penalty)
