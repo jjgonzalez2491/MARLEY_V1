@@ -40,24 +40,6 @@ def find_latest_checkpoint(base_path):
 # Define the path to the count file
 count_file_path = 'run_count_tax_ss_1.txt'
 
-def read_run_count(file_path):
-    """Read the run count from the file."""
-    if os.path.exists(file_path):
-        with open(file_path, 'r') as file:
-            count = file.read().strip()
-            try:
-                # Attempt to convert to a float
-                return float(count)
-            except ValueError:
-                # If conversion fails, return 0
-                return 0
-    return 0
-
-def write_run_count(file_path, count):
-    """Write the run count to the file."""
-    with open(file_path, 'w') as file:
-        file.write(str(count))
-
 if __name__ == "__main__":
 
     penalty_type = 3
@@ -372,25 +354,6 @@ if __name__ == "__main__":
         ray.shutdown()
 
         wandb.finish()
-
-        # Read the current run count
-        run_count = read_run_count(count_file_path)
-
-        # Increment the run count
-        run_count += 1
-
-        print("Number of runs script")
-        print(run_count)
-
-        print("Previous checkpoint")
-        print(restore_string)
-
-        # Write the updated run count back to the file
-        write_run_count(count_file_path, run_count)
-
-        if ( run_count < 0):
-            command = 'bsub < test_CM_EoM_V3_sig_ss_1_battery_loop.sh'
-            subprocess.run(command, shell=True)
         
     except Exception as e:
         
@@ -400,3 +363,4 @@ if __name__ == "__main__":
         print("SIMULATION ERROR")
 
     
+
