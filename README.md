@@ -16,13 +16,11 @@ The framework employs **Independent Proximal Policy Optimization (IPPO)** to sim
 └── training_CM_CfD.py       # Training scripts and configuration
 └── data_CM_CfD.py           # Scripts for evaluating trained agents
 └── ray_environment.yml      # Conda environment specification
-└── README.md               # This file
-├── alternative_envs/        # Alternative environment implementations (with penalty)
+└── README.md                # This file
+├── penalty_environments/    # Alternative environment implementations (with penalty used in section4)
 ├── checkpoints/             # Exemplary trained checkpoint (CRM+CfD, 16 agents)
-├── utils/                   # Utility scripts for plotting and analysis
-├── alternative_envs/        # Alternative environment implementations (with penalty)
-├── environment.yml          # Conda environment specification
-└── README.md               # This file
+├── utils/                   # Utility scripts for harnessing training data from RLLIB and final results from trained agents, plotting and analysis
+├── images                   # Graphical abstract from the pending publication
 ```
 
 ---
