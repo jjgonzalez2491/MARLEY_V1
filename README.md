@@ -46,7 +46,7 @@ The framework employs **Independent Proximal Policy Optimization (IPPO)** to sim
 2. **Create and activate the conda environment:**
 ```bash
    conda env create -f ray_environment.yml
-   conda activate marley
+   conda activate ray_environment
 ```
 
 3. **Adjust the corresponding directories**
@@ -60,23 +60,23 @@ The framework employs **Independent Proximal Policy Optimization (IPPO)** to sim
 
 To train agents in the electricity market environment:
 ```bash
-python training/train.py [--config CONFIG_FILE]
+python training_CM_CfD.py
 ```
+To configure the scenario, it is necessary to modify the corresponding variables in the training script and in the corresponding excel file. 
 
-> **Note:** The training script is configured for HPC environments with LSF job scheduling. Modifications may be required for local execution.
+> **Note:** The training script is configured for HPC environments with LSF job scheduling. Modifications may be required for local execution (parallel environments for sampling, maximum GPU memory limits, among others). 
 
 ### Evaluation
 
 To evaluate trained agents:
 ```bash
-python evaluation/evaluate.py [--checkpoint CHECKPOINT_PATH]
+python data_CM_CfD.py
 ```
-
-An exemplary checkpoint for a system with **16 agents** under **capacity market and CfD mechanisms** is provided in the `checkpoints/` folder.
+> **Note:** The evaluation script reads a RLLIB checkpoint obtained after training. For testing purposes, an exemplary checkpoint for a system with **16 agents** under **capacity market and CfD mechanisms** is provided in the `checkpoints/` folder.
 
 ### Data Files
 
-Base Excel files containing market parameters, technology characteristics, and demand profiles are located in the `data/` folder. These files define the stylized Italian electricity system used in the paper.
+Base Excel files containing market parameters, technology characteristics, and demand profiles are located in the `excel_scenario_files/` folder. These files define the stylized Italian electricity system used in the paper.
 
 ### Visualization
 
