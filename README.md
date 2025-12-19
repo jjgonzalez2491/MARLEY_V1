@@ -29,7 +29,7 @@ The framework employs **Independent Proximal Policy Optimization (IPPO)** to sim
 
 ### Main Requirements
 
-- Python 3.8+
+- Python 3.9
 - Conda or Miniconda
 - Recommended Linux-based system
 
@@ -43,7 +43,7 @@ The framework employs **Independent Proximal Policy Optimization (IPPO)** to sim
 
 2. **Create and activate the conda environment:**
 ```bash
-   conda env create -f environment.yml
+   conda env create -f ray_environment.yml
    conda activate marley
 ```
 
