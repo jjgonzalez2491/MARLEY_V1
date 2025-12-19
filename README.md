@@ -1,5 +1,7 @@
 # MARLEY: Multi-Agent Reinforcement Learning for Long-term Electricity Markets
 
+[Javier Gonzalez-Ruiz](https://www.eiee.org/member/javier-jose-gonzalez-ruiz/),[Carlos Rodriguez-Pardo](https://carlosrodriguezpardo.es/),[Alice Di Bella](https://www.eiee.org/member/alice-di-bella/), [Iacopo Savelli](https://green.unibocconi.eu/iacopo-savelli), [Massimo Tavoni](https://www.eiee.org/member/massimo-tavoni/)
+
 ## Overview
 
 This repository contains the implementation of a **multi-agent reinforcement learning (MARL) framework** for modeling long-term electricity markets, used in the article "Assessing Long Term Electricity Market Design for Ambitious Decarbonization Targets using Multi-Agent Reinforcement Learning". The model enables the assessment of various market designs, policy instruments, and decarbonization strategies in electricity systems, with a focus on capturing the adaptive behavior of profit-maximizing generation companies making investment decisions.
