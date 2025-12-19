@@ -17,10 +17,12 @@ The framework employs **Independent Proximal Policy Optimization (IPPO)** to sim
 └── data_CM_CfD.py           # Scripts for evaluating trained agents
 └── ray_environment.yml      # Conda environment specification
 └── README.md                # This file
-├── penalty_environments/    # Alternative environment implementations (with penalty used in section4)
 ├── checkpoints/             # Exemplary trained checkpoint (CRM+CfD, 16 agents)
-├── utils/                   # Utility scripts for harnessing training data from RLLIB and final results from trained agents, plotting and analysis
+├── excel_scenario_files/    # Base excel files with information for the Italian scenarios studied in the publication
 ├── images                   # Graphical abstract from the pending publication
+├── penalty_environments/    # Alternative environment implementations (with penalty used in section4)
+├── utils/                   # Utility scripts for harnessing training data from RLLIB and final results from trained agents, plotting and analysis
+
 ```
 
 ---
@@ -47,6 +49,9 @@ The framework employs **Independent Proximal Policy Optimization (IPPO)** to sim
    conda activate marley
 ```
 
+3. **Adjust the corresponding directories**
+
+4. **Modify the training script and the base excel files to set up the simulation**
 ---
 
 ## Usage
