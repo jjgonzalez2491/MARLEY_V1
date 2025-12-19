@@ -1,4 +1,4 @@
-# MARLEY: Multi-Agent Reinforcement Learning for Long-term Electricity Markets
+# MARLEY: **M**ulti-Agent Reinforcement Learning for Long-term Electricity Markets
 
 ## Overview
 
