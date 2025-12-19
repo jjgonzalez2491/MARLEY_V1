@@ -83,7 +83,11 @@ Plotting utilities are provided in the `utils/` folder for generating market out
 
 If you use this framework in your research, please cite:
 ```bibtex
-[Your citation information here]
+@unpublished{gonzalez-ruiz_assessing_2025,
+	title = {Assessing Long-Term Electricity Market Design for Ambitious Decarbonization Targets using Multi Agent Reinforcement Learning},
+	author = {Gonzalez-Ruiz, Javier and Rodriguez-Pardo, Carlos and Di Bella, Alice and Tavoni, Massimo},
+	date = {2025},
+}
 ```
 
 ---
