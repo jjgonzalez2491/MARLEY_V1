@@ -12,7 +12,7 @@ import shutil
 from ray import air, tune
 import numpy as np
 from ray.tune.registry import register_env
-from CM_CfD_EoM_Storage import CM_EoM
+from CM_CfD import CM_EoM
 from ray.rllib.examples.rl_module.action_masking_rlm import TorchActionMaskRLM
 from ray.rllib.algorithms.ppo import PPOConfig
 from ray.rllib.core.rl_module.rl_module import SingleAgentRLModuleSpec
@@ -363,4 +363,5 @@ if __name__ == "__main__":
         print("SIMULATION ERROR")
 
     
+
 
