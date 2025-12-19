@@ -11,7 +11,7 @@ import glob
 
 n = 1
 
-from CM_CfD_EoM_Storage import CM_EoM
+from CM_CfD import CM_EoM
 
 def find_latest_checkpoint(input_string, CVaR):
 
